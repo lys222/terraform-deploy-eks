@@ -1,0 +1,16 @@
+cluster_name    =   "CLUSTER-NAME"
+cluster_version =   "1.28"
+
+vpc_cidr    =   "10.0.0.0/16"
+
+ami_type        =   "AL2_x86_64"
+instance_type   =   ["t2.micro"]
+
+disk_size   =   50
+min_size     = 1
+max_size     = 2
+desired_size = 2
+
+iam_arn     =  "ROLE_ARN"
+policy_arn  =  "POLICY_ARN"
+ec2_ssh_key_name = "SSH_KEY_NAME"
