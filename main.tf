@@ -92,22 +92,22 @@ module "eks" {
       }
       }
   }
-  access_entries = {
-    # One access entry with a policy associated
-    ex-single = {
-      kubernetes_groups = []
-      principal_arn     = var.iam_arn
+  # access_entries = {
+  #   # One access entry with a policy associated
+  #   ex-single = {
+  #     kubernetes_groups = []
+  #     principal_arn     = var.iam_arn
 
-      policy_associations = {
-        single = {
-          policy_arn = var.policy_arn
-          access_scope = {
-            type       = "cluster"
-          }
-        }
-      }
-    }
-  }
+  #     policy_associations = {
+  #       single = {
+  #         policy_arn = var.policy_arn
+  #         access_scope = {
+  #           type       = "cluster"
+  #         }
+  #       }
+  #     }
+  #   }
+  # }
   
   tags = local.tags
 }

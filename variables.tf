@@ -59,7 +59,7 @@ variable "desired_size" {
 variable "iam_arn" {
     description = "IAM Role ARN for EKS"
     type = string
-    default = ${{ vars.IAM_ROLE_ARN }}
+    default = null
 }
 
 variable "policy_arn" {
