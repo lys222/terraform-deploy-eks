@@ -104,4 +104,4 @@ jobs:
       - name: Terraform apply
         id: apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        run: terraform apply -auto-approve -var=prefix="$MY_PREFIX" -input=false
+        run: terraform apply -auto-approve -input=false
