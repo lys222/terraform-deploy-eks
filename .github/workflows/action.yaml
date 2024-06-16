@@ -67,7 +67,7 @@ jobs:
 
       - name: Terraform plan
         id: plan
-        run: terraform plan -no-color -var=prefix="$MY_PREFIX"
+        run: terraform plan -no-color
         # working-directory: ${{ env.working-directory }}
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
