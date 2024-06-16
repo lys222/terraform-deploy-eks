@@ -71,5 +71,5 @@ variable "policy_arn" {
 variable "ec2_ssh_key_name" {
     description = "EC2 SSH Key name"
     type = string
-    default = ysKey
+    default = "ysKey"
 }
